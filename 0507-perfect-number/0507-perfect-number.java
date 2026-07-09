@@ -8,7 +8,7 @@ class Solution {
             if(num%i==0){
                 int firstfactor = i;
                 int secondfactor = (num)/firstfactor;
-                sum = sum+i;
+                sum = sum+firstfactor;
                 if(firstfactor != secondfactor){
                     sum = sum + secondfactor;
                 }
