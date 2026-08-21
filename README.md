@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0179-largest-number](https://github.com/Akash76789/leetcode/tree/master/0179-largest-number) |
+| [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 ## String
 |  |
 | ------- |
@@ -22,5 +23,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0507-perfect-number](https://github.com/Akash76789/leetcode/tree/master/0507-perfect-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
