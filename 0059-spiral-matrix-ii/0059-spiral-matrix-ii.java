@@ -1,42 +1,90 @@
 class Solution {
     public int[][] generateMatrix(int n) {
-        int [][] matrix = new int[n][n];
-        int toprow = 0;
-        int bottomrow = n-1;
-        int leftcolumn = 0;
-        int rightcolumn = n-1;
 
+        // Create an n x n matrix
+        int[][] matrix = new int[n][n];
+
+        // Four boundaries of the matrix
+        int toprow = 0;
+        int bottomrow = n - 1;
+        int leftcolumn = 0;
+        int rightcolumn = n - 1;
+
+        // Number that we will put inside the matrix
         int current = 1;
 
-        while(current<=n*n){
-            // toprow = leftcolumn to right column; ( row is fixed and column is varible)
-             for(int j = leftcolumn; j<=rightcolumn && current<=n*n ;j++){
-                matrix[toprow][j]=current++;
-             }
-             toprow++;
+        // Continue until current becomes greater than n*n
+        while (current <= n * n) {
+
+            // 1. TOP ROW
+            // Row is fixed
+            // Column is changing
+            // Move: Left → Right
+            for (int j = leftcolumn;
+                 j <= rightcolumn && current <= n * n;
+                 j++) {
+
+                matrix[toprow][j] = current;
+                current++;
+            }
+
+            // Top row is completed
+            // Move top boundary down
+            toprow++;
 
 
-             // right column = toprow to bottomrow; ( column is fixed and row is varible)
-             for(int i =  toprow; i<= bottomrow && current<=n*n; i++){
-                matrix[i][rightcolumn]=current++;
-             }
+            // 2. RIGHT COLUMN
+            // Column is fixed
+            // Row is changing
+            // Move: Top → Bottom
+            for (int i = toprow;
+                 i <= bottomrow && current <= n * n;
+                 i++) {
+
+                matrix[i][rightcolumn] = current;
+                current++;
+            }
+
+            // Right column is completed
+            // Move right boundary left
             rightcolumn--;
 
-             // bottomrow = rightcolumn to left column; ( row is fixed and column is varible)
-             for(int j = rightcolumn; j>=leftcolumn && current<=n*n;j--){
-                matrix[bottomrow][j]=current++;
-             }
-             bottomrow--;
+
+            // 3. BOTTOM ROW
+            // Row is fixed
+            // Column is changing
+            // Move: Right → Left
+            for (int j = rightcolumn;
+                 j >= leftcolumn && current <= n * n;
+                 j--) {
+
+                matrix[bottomrow][j] = current;
+                current++;
+            }
+
+            // Bottom row is completed
+            // Move bottom boundary up
+            bottomrow--;
 
 
-         // left column = bottomrow to toprow; ( column is fixed and row is varible)
-             for(int i = bottomrow; i>= toprow && current<=n*n; i--){
-                matrix[i][leftcolumn]=current++;
-             }
+            // 4. LEFT COLUMN
+            // Column is fixed
+            // Row is changing
+            // Move: Bottom → Top
+            for (int i = bottomrow;
+                 i >= toprow && current <= n * n;
+                 i--) {
+
+                matrix[i][leftcolumn] = current;
+                current++;
+            }
+
+            // Left column is completed
+            // Move left boundary right
             leftcolumn++;
-
-
         }
+
+        // Return the filled matrix
         return matrix;
-        }
     }
+}
