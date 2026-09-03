@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/Akash76789/leetcode/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0867-transpose-matrix](https://github.com/Akash76789/leetcode/tree/master/0867-transpose-matrix) |
+| [3875-construct-uniform-parity-array-i](https://github.com/Akash76789/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 ## String
 |  |
 | ------- |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Akash76789/leetcode/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0507-perfect-number](https://github.com/Akash76789/leetcode/tree/master/0507-perfect-number) |
+| [3875-construct-uniform-parity-array-i](https://github.com/Akash76789/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 ## Two Pointers
 |  |
 | ------- |
