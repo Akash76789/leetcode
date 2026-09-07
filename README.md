@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/Akash76789/leetcode/tree/master/0048-rotate-image) |
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0507-perfect-number](https://github.com/Akash76789/leetcode/tree/master/0507-perfect-number) |
+| [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Akash76789/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 ## Two Pointers
 |  |
@@ -54,4 +55,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/Akash76789/leetcode/tree/master/0118-pascals-triangle) |
+| [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
+## Recursion
+|  |
+| ------- |
+| [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
 <!---LeetCode Topics End-->
