@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/Akash76789/leetcode/tree/master/0048-rotate-image) |
+| [0050-powx-n](https://github.com/Akash76789/leetcode/tree/master/0050-powx-n) |
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0507-perfect-number](https://github.com/Akash76789/leetcode/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0050-powx-n](https://github.com/Akash76789/leetcode/tree/master/0050-powx-n) |
 | [0509-fibonacci-number](https://github.com/Akash76789/leetcode/tree/master/0509-fibonacci-number) |
 ## Memoization
 |  |
