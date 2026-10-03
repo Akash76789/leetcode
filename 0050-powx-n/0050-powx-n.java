@@ -1,22 +1,32 @@
 class Solution {
+
     public double myPow(double x, int n) {
-        // base case 
-        if(n==0){
+        return power(x, (long)n);
+    }
+
+    public double power(double x, long n) {
+
+        // Base case
+        if (n == 0) {
             return 1;
         }
-        if(n<0){
-            return 1 / myPow(x, -(n + 1)) / x;
+
+        // Negative power
+        if (n < 0) {
+            return 1 / power(x, -n);
         }
-     
-     // recursive work
-    double smallans =  myPow(x , n/2);
-    if(n%2==0){ // if n is even 
-       return smallans * smallans;
-    }
-     else{
-        return smallans * smallans * x;
-     }
-        
-        
+
+        // Recursive work
+        double smallans = power(x, n / 2);
+
+        // Even power
+        if (n % 2 == 0) {
+            return smallans * smallans;
+        }
+
+        // Odd power
+        else {
+            return smallans * smallans * x;
+        }
     }
 }
