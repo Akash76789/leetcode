@@ -48,7 +48,7 @@ class Solution {
             return;
         }
         // mid index 
-        int mid = (l+r)/2;
+    int mid = l + (r - l) / 2;
         // recusrive work 
         merge(nums,l,mid);
         // recusrive work 
