@@ -1,76 +1,62 @@
-
 class Solution {
+    public static void merge (int [] nums , int start , int mid , int end){
+        // find length of left array 
+        int n1 = mid - start+1;
+        int n2 = end - mid;
 
-    // Merge two sorted halves of the array
-    public static void merge(int[] nums, int l, int mid, int r) {
+        // left array 
 
-        int n1 = mid - l + 1; // Size of left half
-        int n2 = r - mid;     // Size of right half
+        int [] left = new int [n1];
+        int [] right = new int [n2];
 
-        int[] left = new int[n1];
-        int[] right = new int[n2];
-
-        // Copy elements from the original array to left array
-        for (int i = 0; i < n1; i++) {
-            left[i] = nums[l + i];
+        for(int i= 0; i<n1; i++){
+            left[i] = nums[start+i];
+        }
+        for(int i = 0; i<n2; i++){
+        right[i] = nums[mid+1+i];
         }
 
-        // Copy elements from the original array to right array
-        for (int i = 0; i < n2; i++) {
-            right[i] = nums[mid + 1 + i];
-        }
+        // copy elment of left and right array in final array in a sprte dway
 
-        int i = 0; // Index of left array
-        int j = 0; // Index of right array
-        int k = l; // Index of original array
+    int i =0;
+    int j = 0;
+    int k  = start;
 
-        // Compare both arrays and insert smaller elements first
-        while (i < n1 && j < n2) {
-            if (left[i] <= right[j]) {
-                nums[k++] = left[i++];
-            } else {
-                nums[k++] = right[j++];
-            }
-        }
-
-        // Copy remaining elements from left array
-        while (i < n1) {
-            nums[k++] = left[i++];
-        }
-
-        // Copy remaining elements from right array
-        while (j < n2) {
-            nums[k++] = right[j++];
-        }
+    while(i<n1 && j<n2 ){
+       if(left[i]<right[j]){
+        nums[k++] = left[i++];
+       }
+       else{
+        nums[k++] = right[j++];
+       }
     }
-
-    // Divide the array into smaller parts and sort them
-    public static void mergeSort(int[] nums, int l, int r) {
-
-        // Base case: stop when one or zero elements remain
-        if (l >= r) {
+    while(i<n1){
+        nums[k++] = left[i++];
+    }
+    while(j<n2){
+        nums[k++] = right[j++];
+    }
+    }
+    public static void mergeSort(int [] nums , int start , int end){
+        // base case 
+        if(start>=end){
             return;
         }
-
-        // Find the middle index
-        int mid = l + (r - l) / 2;
-
-        // Sort the left half
-        mergeSort(nums, l, mid);
-
-        // Sort the right half
-        mergeSort(nums, mid + 1, r);
-
-        // Merge the two sorted halves
-        merge(nums, l, mid, r);
+        int mid = (start+end)/2;
+        // recursive work 
+        mergeSort(nums,start,mid);
+        // recursive work 
+        mergeSort(nums,mid+1,end);
+        // self work 
+        merge(nums,start, mid , end);
     }
-
     public int[] sortArray(int[] nums) {
+        int n = nums.length;
+        int start = 0;
+        int end = n-1;
 
-        // Start sorting from the first to last index
-        mergeSort(nums, 0, nums.length - 1);
-
-        // Return the sorted array
+        mergeSort(nums,start,end);
         return nums;
+
     }
 }
