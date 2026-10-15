@@ -4,24 +4,26 @@ class Solution {
         int n = arr.length;
         int start = 0;
         int end = n - 1;
-        int ans = -1;
+        int ans = -1; // Stores the peak index
 
-        while (start <= end) {
+        // Binary search
+        while (start < end) {
             int mid = start + (end - start) / 2;
 
-            // Check that mid + 1 is a valid index
-            if (mid + 1 < n && arr[mid] < arr[mid + 1]) {
-                ans = mid + 1;
-                start = mid + 1;
-            } else {
+            // If the array is increasing, peak is on the right
+            if (arr[mid] < arr[mid + 1]) {
+                ans = mid + 1; // Store the possible peak index
+                start = mid + 1; // Search the right half
+            } 
+            else {
                 // Peak is at mid or on the left
-                ans = mid;
-                end = mid - 1;
+                end = mid;
             }
         }
 
-        return ans;
+        return ans; // Return the stored peak index
     }
 }
+
 
 
