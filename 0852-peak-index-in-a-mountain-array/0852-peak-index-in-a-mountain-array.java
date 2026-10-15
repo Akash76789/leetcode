@@ -6,14 +6,14 @@ class Solution {
         int ans = -1; // no index of peak element is found 
 
           // arr[mid+1] is target 
-        while(start<=end){
+        while(start<end){
             int mid = start+(end-start)/2;
             if(arr[mid]<arr[mid+1]){
                   ans = mid+1;
                   start = mid+1;
             }
             else{
-                end = mid-1;
+                end = mid;
             }
         }
         return ans;
