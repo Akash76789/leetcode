@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Akash76789/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0283-move-zeroes](https://github.com/Akash76789/leetcode/tree/master/0283-move-zeroes) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Akash76789/leetcode/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0867-transpose-matrix](https://github.com/Akash76789/leetcode/tree/master/0867-transpose-matrix) |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Akash76789/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Akash76789/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Akash76789/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Akash76789/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Akash76789/leetcode/tree/master/0852-peak-index-in-a-mountain-array) |
 ## Database
 |  |
 | ------- |
@@ -118,4 +120,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
+## Ternary Search
+|  |
+| ------- |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Akash76789/leetcode/tree/master/0852-peak-index-in-a-mountain-array) |
 <!---LeetCode Topics End-->
