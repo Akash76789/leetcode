@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0852-peak-index-in-a-mountain-array](https://github.com/Akash76789/leetcode/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0867-transpose-matrix](https://github.com/Akash76789/leetcode/tree/master/0867-transpose-matrix) |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
+| [1672-richest-customer-wealth](https://github.com/Akash76789/leetcode/tree/master/1672-richest-customer-wealth) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Akash76789/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 ## String
 |  |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/Akash76789/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Akash76789/leetcode/tree/master/0240-search-a-2d-matrix-ii) |
 | [0867-transpose-matrix](https://github.com/Akash76789/leetcode/tree/master/0867-transpose-matrix) |
+| [1672-richest-customer-wealth](https://github.com/Akash76789/leetcode/tree/master/1672-richest-customer-wealth) |
 ## Simulation
 |  |
 | ------- |
