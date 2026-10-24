@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/Akash76789/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0412-fizz-buzz](https://github.com/Akash76789/leetcode/tree/master/0412-fizz-buzz) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/Akash76789/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
+| [1189-maximum-number-of-balloons](https://github.com/Akash76789/leetcode/tree/master/1189-maximum-number-of-balloons) |
 ## Greedy
 |  |
 | ------- |
@@ -140,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/Akash76789/leetcode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Akash76789/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
+| [1189-maximum-number-of-balloons](https://github.com/Akash76789/leetcode/tree/master/1189-maximum-number-of-balloons) |
 ## Ternary Search
 |  |
 | ------- |
@@ -158,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Akash76789/leetcode/tree/master/0001-two-sum) |
 | [0383-ransom-note](https://github.com/Akash76789/leetcode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Akash76789/leetcode/tree/master/0387-first-unique-character-in-a-string) |
+| [1189-maximum-number-of-balloons](https://github.com/Akash76789/leetcode/tree/master/1189-maximum-number-of-balloons) |
 ## Queue
 |  |
 | ------- |
