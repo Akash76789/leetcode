@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0852-peak-index-in-a-mountain-array](https://github.com/Akash76789/leetcode/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0867-transpose-matrix](https://github.com/Akash76789/leetcode/tree/master/0867-transpose-matrix) |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
+| [0977-squares-of-a-sorted-array](https://github.com/Akash76789/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1480-running-sum-of-1d-array](https://github.com/Akash76789/leetcode/tree/master/1480-running-sum-of-1d-array) |
 | [1672-richest-customer-wealth](https://github.com/Akash76789/leetcode/tree/master/1672-richest-customer-wealth) |
 | [1929-concatenation-of-array](https://github.com/Akash76789/leetcode/tree/master/1929-concatenation-of-array) |
@@ -55,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/Akash76789/leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/Akash76789/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0912-sort-an-array](https://github.com/Akash76789/leetcode/tree/master/0912-sort-an-array) |
+| [0977-squares-of-a-sorted-array](https://github.com/Akash76789/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 ## Math
 |  |
 | ------- |
@@ -79,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/Akash76789/leetcode/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/Akash76789/leetcode/tree/master/0283-move-zeroes) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/Akash76789/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
+| [0977-squares-of-a-sorted-array](https://github.com/Akash76789/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 ## Matrix
 |  |
 | ------- |
