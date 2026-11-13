@@ -1,19 +1,23 @@
 class Solution {
-    // bubble sort approach
     public void moveZeroes(int[] nums) {
-       int n = nums.length;
-     for(int i = 0; i<n-1; i++){
-        boolean flag = false;
-        for(int j =0; j<n-i-1; j++){
-            if(nums[j]==0 && nums[j+1]!=0){ // swap them 
-               int temp = nums[j];
-               nums[j] = nums[j+1];
-               nums[j+1]=temp;
-               flag = true;
-            }
+        int n = nums.length;
+     int i = 0;
+     int j = i+1;
+     while(j<n){
+        if(nums[i]==0 && nums[j]==0){
+            j++;
         }
-        if(flag==false){
-            return;
+        else if(nums[i]==0 && nums[j]!=0){
+            // swap thyem 
+            int temp = nums[i];
+            nums[i]= nums[j];
+            nums[j] = temp;
+            i++;
+            j++;
+        }
+        else{
+            i++;
+            j++;
         }
      }
     }
