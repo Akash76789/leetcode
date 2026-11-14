@@ -1,14 +1,16 @@
-
 class Solution {
+
     public List<List<Integer>> threeSum(int[] nums) {
 
         int n = nums.length;
 
-        List<List<Integer>> ans = new ArrayList<>();
-
-        // Sort the array
+        // Step 1: Sort the array
         Arrays.sort(nums);
 
+        // Store all unique triplets
+        List<List<Integer>> ans = new ArrayList<>();
+
+        // Step 2: Fix the first element
         for (int i = 0; i < n - 2; i++) {
 
             // Skip duplicate first elements
@@ -16,17 +18,19 @@ class Solution {
                 continue;
             }
 
+            // Step 3: Initialize two pointers
             int j = i + 1;
             int k = n - 1;
-            int target = 0;
 
+            // Search for two elements whose sum is -nums[i]
             while (j < k) {
 
+                // Calculate the sum of three elements
                 int sum = nums[i] + nums[j] + nums[k];
 
-                if (sum == target) {
+                if (sum == 0) {
 
-                    // Store the triplet
+                    // Store the valid triplet
                     ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
 
                     // Move both pointers
@@ -44,16 +48,22 @@ class Solution {
                     }
                 }
 
-                else if (sum < target) {
+                // If sum is less than zero, increase j
+                else if (sum < 0) {
                     j++;
                 }
 
+                // If sum is greater than zero, decrease k
                 else {
                     k--;
                 }
             }
         }
 
+        // Return all unique triplets
         return ans;
     }
-}
+
+   
+    }
+
