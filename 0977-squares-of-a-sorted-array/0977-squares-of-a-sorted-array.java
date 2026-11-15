@@ -1,108 +1,87 @@
-
 class Solution {
-
-    // Method to reverse an array
-    public static void reverse(int[] arr){
-
-        int n = arr.length;
-        int i = 0;
-        int j = n - 1;
-
-        while(i < j){
-
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-
-            i++;
-            j--;
-        }
+    public static void reverse(int[]arr){
+     int n = arr.length;
+    int i =0;
+    int j = n-1;
+    while(i<j){
+        int temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+        i++;
+        j--;
     }
-
+    }
     public int[] sortedSquares(int[] nums) {
-
-        int m = 0;
-        int n = 0;
-
-        // Count positive and negative elements
-        for(int i = 0; i < nums.length; i++){
-
-            if(nums[i] >= 0){
-                m++;
-            }
-            else{
-                n++;
-            }
-        }
-
-        int[] positive = new int[m];
-        int[] negative = new int[n];
-
+        int n= nums.length;
         int p = 0;
         int q = 0;
-
-        // Separate positive and negative elements
-        for(int i = 0; i < nums.length; i++){
-
-            if(nums[i] >= 0){
-                positive[p] = nums[i];
+        for(int i =0; i<n; i++){
+            if(nums[i]>=0){
                 p++;
             }
             else{
-                negative[q] = nums[i];
                 q++;
             }
         }
 
-        // Square positive elements
-        for(int i = 0; i < m; i++){
-            positive[i] = positive[i] * positive[i];
-        }
+        int [] positive = new int[p];
+        int [] negative = new int[q];
+        int s = 0; // traverse positive array 
+        int t = 0; // traverse negative array 
 
-        // Square negative elements
-        for(int i = 0; i < n; i++){
-            negative[i] = negative[i] * negative[i];
-        }
-
-        // Reverse negative array
-        reverse(negative);
-
-        // Create result array
-        int[] result = new int[m + n];
-
-        int i = 0; // Positive pointer
-        int j = 0; // Negative pointer
-        int k = 0; // Result pointer
-
-        // Merge both sorted arrays
-        while(i < m && j < n){
-
-            if(positive[i] <= negative[j]){
-                result[k] = positive[i];
-                i++;
-                k++;
+        for(int i =0; i<n;i++){
+            if(nums[i]>=0){
+                positive[s]=nums[i];
+                s++;
             }
             else{
-                result[k] = negative[j];
-                j++;
-                k++;
+                negative[t]=nums[i];
+                t++;
             }
         }
 
-        // Copy remaining positive elements
-        while(i < m){
-            result[k] = positive[i];
+        for(int i =0; i<p;i++){
+            positive[i] = positive[i]*positive[i];
+        }
+        for(int i =0; i<q;i++){
+            negative[i] = negative[i]*negative[i];
+        }
+        reverse(negative);
+
+      int [] result = new int[p+q];
+
+      int i = 0; // pointer for positive array 
+      int j = 0; // pointer for negative array 
+      int r = 0;  // pointer for final array 
+
+      while(i<p && j<q){
+        if(positive[i]<=negative[j]){
+            result[r] = positive[i];
             i++;
-            k++;
+            r++;
         }
-
-        // Copy remaining negative elements
-        while(j < n){
-            result[k] = negative[j];
+        else{
+            result[r] = negative[j];
             j++;
-            k++;
+            r++;
         }
+      }
+        while(i<p){
+        result[r]=positive[i];
+        i++;
+        r++;
+      }
+      while(j<q){
+        result[r]=negative[j];
+        j++;
+        r++;
+      }
+      return result;
+    
 
-        return result;
+
+        
+
+
     }
 }
