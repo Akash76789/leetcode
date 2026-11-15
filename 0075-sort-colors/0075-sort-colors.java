@@ -1,43 +1,31 @@
 class Solution {
-    public void sortColors(int[] nums) {
+    public void sortColors(int[] arr) {
+      int n  = arr.length;
+      int low = 0;
+      int mid = 0;
+      int high = n-1; 
 
-        int n = nums.length;
+      while(mid<=high){
+        if(arr[mid] == 0){
+            // swap[mid] && arr[low]
+            int temp = arr[mid];
+            arr[mid] = arr[low];
+            arr[low] = temp;
+            mid++;
+            low++;
 
-        int left = 0;       // Points to the position where next 0 should go
-        int right = n - 1;  // Points to the position where next 2 should go
-        int mid = 0;        // Checks the current element
-
-        while (mid <= right) {
-
-            if (nums[mid] == 0) {
-
-                // Swap 0 with the element at left
-                int temp = nums[mid];
-                nums[mid] = nums[left];
-                nums[left] = temp;
-
-                // 0 is placed correctly, so increase both pointers
-                left++;
-                mid++;
-            }
-
-            else if (nums[mid] == 1) {
-
-                // 1 is already in the correct middle region
-                mid++;
-            }
-
-            else {
-
-                // Swap 2 with the element at right
-                int temp = nums[mid];
-                nums[mid] = nums[right];
-                nums[right] = temp;
-
-                // 2 is placed correctly, so decrease right
-                // Do not increase mid because the swapped element is not checked yet
-                right--;
-            }
         }
+        else if(arr[mid]==2){
+            // swap arr[mid] && arr[high]
+            int temp =arr[mid];
+            arr[mid]=arr[high];
+            arr[high]=temp;
+            high--;
+        }
+        else{
+            // arr[mid]==1
+            mid++;
+        }
+      }
     }
 }
