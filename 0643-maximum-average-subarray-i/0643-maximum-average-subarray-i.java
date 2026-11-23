@@ -1,36 +1,50 @@
+
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
+
         int n = nums.length;
+
         int low = 0;
-        int high = k-1;
+        int high = k - 1;
+
         double average = 0;
         double sum = 0;
 
         double maxavg = -Double.MAX_VALUE;
 
-        for(int i = low; i <=high; i++){
+        // Calculate sum of first window
+        for (int i = low; i <= high; i++) {
             sum = sum + nums[i];
         }
 
-        while(high<n){
+        while (high < n) {
 
-            double length = high - low +1;
-            
-           
-            if(length == k){
-            average = sum/length ;
-            maxavg = Math.max(average,maxavg);
+            // Calculate current window length
+            double length = high - low + 1;
+
+            // Calculate average when window size is k
+            if (length == k) {
+                average = sum / k;
+
+                maxavg = Math.max(average, maxavg);
             }
+
+            // Move window forward
             low++;
             high++;
-            if(high==n){
+
+            // Stop if high reaches the end
+            if (high == n) {
                 break;
             }
-            sum = sum - nums[low-1];
+
+            // Remove outgoing element
+            sum = sum - nums[low - 1];
+
+            // Add incoming element
             sum = sum + nums[high];
-            }
+        }
 
         return maxavg;
-
     }
 }
