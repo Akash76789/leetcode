@@ -1,31 +1,20 @@
-
 class Solution {
-    public int maxProfit(int[] nums) {
-        int n = nums.length;
-
-        int low = 0;  // Buying day
-        int high = 0; // Selling day
-
-        int maxProfit = 0; // Stores maximum profit
-
-        while (high < n) {
-
-            // Calculate profit by selling on the current day
-            int profit = nums[high] - nums[low];
-
-            // Update maximum profit
-            maxProfit = Math.max(profit, maxProfit);
-
-            // If current day's price is lower,
-            // make it the new buying day
-            if (nums[low] > nums[high]) {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int low = 0; //  buying day 
+        int high = 0; // selling day 
+        int maxProfit = Integer.MIN_VALUE;
+        while(high<n){
+            int Profit = prices[high] - prices[low];
+            maxProfit = Math.max(maxProfit,Profit);
+            if(prices[low]>prices[high]){
                 low = high;
             }
-
-            // Move to the next selling day
             high++;
         }
-
+        if(maxProfit == Integer.MIN_VALUE){
+            return 0;
+        }
         return maxProfit;
     }
 }
